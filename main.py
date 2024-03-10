@@ -7,6 +7,9 @@ init(autoreset=True)
 # Create a Figlet object with a specific font
 f = Figlet(font='slant')
 
-# Generate ASCII art with color
+# Generate ASCII art
 ascii_banner = f.renderText("Hello, World!")
-print(Fore.GREEN + ascii_banner + Style.RESET_ALL)
+
+# Add color to the ASCII art and print
+colored_ascii_banner = Fore.GREEN + ascii_banner + Style.RESET_ALL
+print(colored_ascii_banner)
